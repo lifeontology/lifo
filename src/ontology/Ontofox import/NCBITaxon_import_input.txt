@@ -18,10 +18,13 @@ http://purl.obolibrary.org/obo/NCBITaxon_1773 #M. tuberculosis
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/NCBITaxon_2759 #Eukaryota
-subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #organism
+subClassOf http://purl.obolibrary.org/obo/LifO_0000005 #organism
 
 http://purl.obolibrary.org/obo/NCBITaxon_2 #Bacteria
-subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #organism
+subClassOf http://purl.obolibrary.org/obo/LifO_0000005 #organism
+
+http://purl.obolibrary.org/obo/NCBITaxon_2157 #Archaea
+subClassOf http://purl.obolibrary.org/obo/LifO_0000005 #organism
 
 [Source term retrieval setting]
 includeComputedIntermediates
