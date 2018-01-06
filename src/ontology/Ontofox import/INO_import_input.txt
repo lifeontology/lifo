@@ -1,0 +1,31 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/lifo/INO_import.owl
+
+[Source ontology]
+INO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/INO_0000001 #interaction network
+http://purl.obolibrary.org/obo/INO_0000002 #interaction
+http://purl.obolibrary.org/obo/INO_0000003 #pathway
+http://purl.obolibrary.org/obo/INO_0000004 #Bayesian network
+http://purl.obolibrary.org/obo/INO_0000157 #regulation
+
+http://purl.obolibrary.org/obo/INO_0000015 #interaction role
+http://purl.obolibrary.org/obo/INO_0000009 #interaction input role 
+http://purl.obolibrary.org/obo/INO_0000010 #interaction output role
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/INO_0000015 #interaction role
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
+
+http://purl.obolibrary.org/obo/BFO_0000015 #process 
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
