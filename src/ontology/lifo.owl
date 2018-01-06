@@ -62,6 +62,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/LifO_0000013 -->
+
+    <owl:ObjectProperty rdf:about="&obo;LifO_0000013">
+        <rdfs:label xml:lang="en">motivated by</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation between a life process and a life motive.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000016 -->
+
+    <owl:ObjectProperty rdf:about="&obo;LifO_0000016">
+        <rdfs:label xml:lang="en">has motive</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation between a living organism and a life motive.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -86,12 +106,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
             </owl:Restriction>
@@ -104,14 +118,26 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>OneNet life</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
         <obo:IAO_0000115>An integrative interaction network process of an organism that starts from the moment when the first cell forms, has its blueprint stored in the genotype, and performs its dynamic process by interacting with its environment to achieve its survival and other motivations.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -174,7 +200,7 @@
     <!-- http://purl.obolibrary.org/obo/LifO_0000006 -->
 
     <owl:Class rdf:about="&obo;LifO_0000006">
-        <rdfs:label>first cell formation time</rdfs:label>
+        <rdfs:label>first cell formation moment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
         <obo:IAO_0000115>A time point when the first cell of a multicellular organism (or the cell of a single cell organism) just forms. This is the time when the OneNet life process of an organism just starts based on the OneNet theory of life.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -215,6 +241,84 @@
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>a part of the whole life process</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000010 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000010">
+        <rdfs:label xml:lang="en">life motivation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a part of the whole life process</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000011 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000011">
+        <rdfs:label xml:lang="en">life motive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000012 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000012">
+        <rdfs:label xml:lang="en">motive to survive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000014 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000014">
+        <rdfs:label xml:lang="en">society</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;RO_0002577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Society</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000015 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000015">
+        <rdfs:label xml:lang="en">society motive</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
     </owl:Class>
     
 
