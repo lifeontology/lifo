@@ -30,6 +30,7 @@
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;lifo/BFO_import.owl"/>
+        <owl:imports rdf:resource="&obo;lifo/CHEBI_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/ENVO_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/INO_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/OBI_import.owl"/>
@@ -62,6 +63,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/LifO_0000008 -->
+
+    <owl:ObjectProperty rdf:about="&obo;LifO_0000008">
+        <rdfs:label xml:lang="en">blueprint for phenotype</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An object property that represents a relation between a genotype and a phenotype where the genotype is the blueprint of the phenotype.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/LifO_0000013 -->
 
     <owl:ObjectProperty rdf:about="&obo;LifO_0000013">
@@ -82,6 +93,44 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/LifO_0000036 -->
+
+    <owl:ObjectProperty rdf:about="&obo;LifO_0000036">
+        <rdfs:label xml:lang="en">protein has gene template</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation between a protein and a gene such that the gene codes for the protein.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000038 -->
+
+    <owl:ObjectProperty rdf:about="&obo;LifO_0000038">
+        <rdfs:label xml:lang="en">transcribed to</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An object property that represents a relation between a gene and a RNA such that the gene is transcribed into the RNA.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000039 -->
+
+    <owl:ObjectProperty rdf:about="&obo;LifO_0000039">
+        <rdfs:label xml:lang="en">translated to</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation between a mRNA and a protein such that the mRNA is transcribed into the protein.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000040 -->
+
+    <owl:ObjectProperty rdf:about="&obo;LifO_0000040">
+        <rdfs:label xml:lang="en">protein has mRNA template</rdfs:label>
+        <obo:IAO_0000115>An object property that represents a relation between a protein and a mRNA such that the mRNA is translated to the protein.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -93,6 +142,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33699 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_33699">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000039"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_000000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/LifO_0000001 -->
 
     <owl:Class rdf:about="&obo;LifO_0000001">
@@ -100,8 +162,8 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -113,7 +175,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -124,14 +186,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>OneNet life</obo:IAO_0000118>
@@ -147,7 +209,25 @@
     <owl:Class rdf:about="&obo;LifO_0000002">
         <rdfs:label xml:lang="en">genotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <obo:IAO_0000115>The total sum of the genetic DNA material of an organism.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A material entity that is the part (DNA sequence) of the genetic makeup of an cell or organism which determines a specific characteristic (phenotype) of that cell or organism.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
     
@@ -158,6 +238,19 @@
     <owl:Class rdf:about="&obo;LifO_0000003">
         <rdfs:label xml:lang="en">prokaryotic genotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;NCBITaxon_2"/>
+                            <rdf:Description rdf:about="&obo;NCBITaxon_2157"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a genotype that exists in a prokaryotic organism (bacterium or archaeon).</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
@@ -169,6 +262,12 @@
     <owl:Class rdf:about="&obo;LifO_0000004">
         <rdfs:label xml:lang="en">eukaryotic genotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_2759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a genotype that exists in an eukaryotic organism (e.g., human).</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
@@ -217,25 +316,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -256,7 +355,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a part of the whole life process</obo:IAO_0000115>
+        <obo:IAO_0000115>a life process that motivates or triggers the beginning of another life process.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
     
@@ -269,14 +368,14 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -288,6 +387,8 @@
     <owl:Class rdf:about="&obo;LifO_0000012">
         <rdfs:label xml:lang="en">motive to survive</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+        <obo:IAO_0000115>A life motive to survive. This is the most basic motive of life.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -309,7 +410,9 @@
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A society is a group of people who have persistent social interactions , share the same geographical or social territory, and have common motivations.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Society</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -319,6 +422,234 @@
     <owl:Class rdf:about="&obo;LifO_0000015">
         <rdfs:label xml:lang="en">society motive</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000017 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000017">
+        <rdfs:label xml:lang="en">physiological need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+        <obo:IAO_0000115>A life motive to physiological need such as hunger, thirst, and sleep.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000018 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000018">
+        <rdfs:label xml:lang="en">motive for social belonging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+        <obo:IAO_0000115>A life motive for interpersonal and involves feelings of belongingness.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000019 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000019">
+        <rdfs:label xml:lang="en">motive for self-actualization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A life motive for an organism to realize and achieve its full potential.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000020 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000020">
+        <rdfs:label xml:lang="en">motive for self-transcendence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A life motive for an organism to realize and achieve some higher goal outside oneself, in altruism and spirituality, which is essentially the desire to reach infinite.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000021 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000021">
+        <rdfs:label xml:lang="en">motive for self-esteem</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000115>A life motive for an organism to achieve a desire to be accepted and valued by others.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000022 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000022">
+        <rdfs:label xml:lang="en">safety need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000011"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000115>A life motive for safety.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000023 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000023">
+        <rdfs:label xml:lang="en">physical safety need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000022"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A safety need that is on an organism&apos;s physical safety.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000024 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000024">
+        <rdfs:label xml:lang="en">economical safety need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000022"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A safety need that is on an organism&apos;s economical situation</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000025 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000025">
+        <rdfs:label xml:lang="en">health need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000022"/>
+        <obo:IAO_0000115>A safety need to maintain one&apos;s health and well-being</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000026 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000026">
+        <rdfs:label xml:lang="en">sleep need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000017"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000115>A physiological need for sleep.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000027 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000027">
+        <rdfs:label xml:lang="en">food need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000017"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A physiological need for food.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000028 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000028">
+        <rdfs:label xml:lang="en">water need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000017"/>
+        <obo:IAO_0000115>A physiological need for water or against thirst.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000029 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000029">
+        <rdfs:label xml:lang="en">breathing need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000017"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A physiological need for air and breathing.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000030 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000030">
+        <rdfs:label xml:lang="en">clothing need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000017"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A physiological need for clothing.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000031 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000031">
+        <rdfs:label xml:lang="en">shelter need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000017"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000115>A physiological need for shelter.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000032 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000032">
+        <rdfs:label xml:lang="en">sexual instinct need</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000017"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A physiological need for sexual instinct.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000033 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000033">
+        <rdfs:label xml:lang="en">motive for friendship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000018"/>
+        <obo:IAO_0000115>A social belonging motive for friendship.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000034 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000034">
+        <rdfs:label xml:lang="en">motive for intimacy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000018"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
+        <obo:IAO_0000115>A social belonging motive for friendship.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000035 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000035">
+        <rdfs:label xml:lang="en">motive for family</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000018"/>
+        <obo:IAO_0000115>A social belonging motive for family.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -343,6 +674,38 @@
 
     <rdf:Description rdf:about="&obo;NCBITaxon_2759">
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000005"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000002 -->
+
+    <rdf:Description rdf:about="&obo;OGG_0000000002">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000038"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_33697"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
+
+    <rdf:Description rdf:about="&obo;PR_000000001">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000036"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000040"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_33699"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
 </rdf:RDF>
 

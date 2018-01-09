@@ -7,6 +7,8 @@ OGG
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/OGG_0000000002 # gene
 http://purl.obolibrary.org/obo/OGG_0000000001 # genome
+http://purl.obolibrary.org/obo/OGG_0000000003 # gene disposition
+http://purl.obolibrary.org/obo/BFO_0000028 #three-dimensional spatial region
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
