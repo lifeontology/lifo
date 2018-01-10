@@ -1,0 +1,43 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/lifo/GO_import.owl
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GO_0000003 #reproduction
+http://purl.obolibrary.org/obo/GO_0007610 # behavior 
+http://purl.obolibrary.org/obo/GO_0032502 # developmental process
+http://purl.obolibrary.org/obo/GO_0040007 # growth
+http://purl.obolibrary.org/obo/GO_0008152 # metabolic process
+http://purl.obolibrary.org/obo/GO_0032501 # multicellular organismal process
+http://purl.obolibrary.org/obo/GO_0009987 # cellular process
+http://purl.obolibrary.org/obo/GO_0065007 # biological regulation
+
+http://purl.obolibrary.org/obo/GO_0044424 #intracellular part
+http://purl.obolibrary.org/obo/GO_0005737 #cytoplasm
+http://purl.obolibrary.org/obo/GO_0005634 #nucleus
+http://purl.obolibrary.org/obo/GO_0005739 #mitochondrion
+http://purl.obolibrary.org/obo/GO_0016020 #membrane
+http://purl.obolibrary.org/obo/GO_0044421 #extracellular region space
+http://purl.obolibrary.org/obo/GO_0043245 #extraorganismal space
+http://purl.obolibrary.org/obo/GO_0043655 #extracellular space of host
+
+http://purl.obolibrary.org/obo/GO_0007610 #behavior 
+http://purl.obolibrary.org/obo/GO_0042756 #drinking behavior
+http://purl.obolibrary.org/obo/GO_0042755 #eating behavior 
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+subClassOf http://purl.obolibrary.org/obo/LifO_0000009 #life process
+
+http://purl.obolibrary.org/obo/GO_0005575 #cellular component
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

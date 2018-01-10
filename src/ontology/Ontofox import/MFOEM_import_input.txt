@@ -1,0 +1,32 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/lifo/MFOEM_import.owl
+
+[Source ontology]
+MFOEM
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/MF_0000020 #mental process
+http://purl.obolibrary.org/obo/GO_0007612 #learning
+http://purl.obolibrary.org/obo/MF_0000019 #perception
+http://purl.obolibrary.org/obo/MF_0000008 #cognitive process 
+
+# http://purl.obolibrary.org/obo/OGMS_0000087 #extended organism
+http://purl.obolibrary.org/obo/MF_0000017 #consciousness
+http://purl.obolibrary.org/obo/MF_0000031 #cognitive representation
+
+http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
+http://purl.obolibrary.org/obo/MF_0000033 #mental disposition
+
+# http://purl.obolibrary.org/obo/MF_0000040 #communication
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/MF_0000020 #mental process 
+subClassOf http://purl.obolibrary.org/obo/LifO_0000009 #life process
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]

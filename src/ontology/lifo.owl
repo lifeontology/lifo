@@ -22,17 +22,19 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;lifo.owl">
-        <dc:date xml:lang="en">01-09-2018</dc:date>
+        <dc:date xml:lang="en">01-10-2018</dc:date>
         <dc:description xml:lang="en">LifO is a formal ontology that represents the life processes of organisms and related entities and relations. LifO is a general purpose ontology that covers the common features associated with different types of organisms such as unicellular prokaryotes (e.g., E. coli) and multicellular organisms (e.g., humans). </dc:description>
         <dc:title xml:lang="en">LifO: Life Ontology</dc:title>
         <dc:subject xml:lang="en">LifO: The general ontology about the life of organisms such as humans</dc:subject>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.07</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.08</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;lifo/BFO_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/CHEBI_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/ENVO_import.owl"/>
+        <owl:imports rdf:resource="&obo;lifo/GO_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/INO_import.owl"/>
+        <owl:imports rdf:resource="&obo;lifo/MFOEM_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/OBI_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/OGG_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/OGMS_import.owl"/>
@@ -162,26 +164,14 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;LifO_0000013"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -192,8 +182,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>OneNet life</obo:IAO_0000118>
@@ -217,14 +219,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
+                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that is the part (DNA sequence) of the genetic makeup of an cell or organism which determines a specific characteristic (phenotype) of that cell or organism.</obo:IAO_0000115>
@@ -315,20 +317,8 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -337,9 +327,21 @@
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000115>a part of the whole life process</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
+        <obo:IAO_0000115>A process that is related to life.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -355,6 +357,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Motivation</obo:IAO_0000119>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>a life process that motivates or stimulates an individual to an action to accomplish a goal or motive.</obo:IAO_0000115>
     </owl:Class>
@@ -368,14 +371,14 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -697,11 +700,14 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/LifO_0000043 -->
+    <!-- http://purl.obolibrary.org/obo/LifO_0000159 -->
 
-    <owl:Class rdf:about="&obo;LifO_0000043">
-        <rdfs:label xml:lang="en">motivator role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;INO_0000009"/>
+    <owl:Class rdf:about="&obo;LifO_0000159">
+        <rdfs:label xml:lang="en">life dynamics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000118>OneNet life dynamics</obo:IAO_0000118>
+        <obo:IAO_0000115>A science branch that analyzes the mechanisms of dynamic interactions among different participants and their associated pathways and networks in a life organism.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 

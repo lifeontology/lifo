@@ -6,14 +6,22 @@ INO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/INO_0000001 #interaction network
+http://purl.obolibrary.org/obo/INO_0000158 #interaction network model
+includeAllChildren
+
 http://purl.obolibrary.org/obo/INO_0000002 #interaction
 http://purl.obolibrary.org/obo/INO_0000003 #pathway
-http://purl.obolibrary.org/obo/INO_0000004 #Bayesian network
 http://purl.obolibrary.org/obo/INO_0000157 #regulation
 
-http://purl.obolibrary.org/obo/INO_0000015 #interaction role
-http://purl.obolibrary.org/obo/INO_0000009 #interaction input role 
-http://purl.obolibrary.org/obo/INO_0000010 #interaction output role
+http://purl.obolibrary.org/obo/INO_0000015 #interactor role
+http://purl.obolibrary.org/obo/INO_0000009 #input interactor role
+includeAllChildren
+ 
+http://purl.obolibrary.org/obo/INO_0000010 #output interactor role
+http://purl.obolibrary.org/obo/INO_0000005 #regulator role
+
+http://purl.obolibrary.org/obo/INO_0000014 #edge
+http://purl.obolibrary.org/obo/INO_0000013 #node
 
 [Top level source term URIs and target direct superclass URIs]
 
@@ -23,9 +31,9 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 http://purl.obolibrary.org/obo/BFO_0000015 #process 
 
 [Source term retrieval setting]
-includeComputedIntermediates
+includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+includeAllAxioms
 
 [Source annotation URIs to be excluded]
