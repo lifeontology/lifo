@@ -425,7 +425,7 @@
 
     <owl:Class rdf:about="&obo;LifO_0000014">
         <rdfs:label xml:lang="en">society</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;RO_0002577"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
@@ -774,17 +774,164 @@
     <!-- http://purl.obolibrary.org/obo/LifO_0000047 -->
 
     <owl:Class rdf:about="&obo;LifO_0000047">
-        <rdfs:label xml:lang="en">society process</rdfs:label>
+        <rdfs:label xml:lang="en">social process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
-        <obo:IAO_0000115>A process that is related to life.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.slideshare.net/annaloucanete7/chapter10-social</obo:IAO_0000119>
+        <obo:IAO_0000115>A recurrent and patterned process that involves the interactions or responses of indivdiuals to one antoher wihch have attained statiblity.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000048 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000048">
+        <rdfs:label xml:lang="en">scholarly society</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A society that exists to promote an academic discipline, profession, or a group of related disciplines such as the arts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Learned_society</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000049 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000049">
+        <rdfs:label xml:lang="en">open society</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000014"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A society in which individuals are confronted with personal decisions as opposed to a magical or tribal or collectivist society.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Open_society</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000050 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000050">
+        <rdfs:label xml:lang="en">cultural change</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000047"/>
+        <obo:IAO_0000118>repositioning of culture</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Culture_change</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A society process that changes or reconstructs the cultural concept of a society</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000051 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000051">
+        <rdfs:label xml:lang="en">social behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000047"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_behavior</obo:IAO_0000119>
+        <obo:IAO_0000115>A behavior among two or more organisms in a society.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000052 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000052">
+        <rdfs:label xml:lang="en">collective animal behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000051"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_behavior</obo:IAO_0000119>
+        <obo:IAO_0000115>A social behavior that involves the coordinated behavior of large groups of similar animals as well as emergent properties of these groups.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000053 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000053">
+        <rdfs:label xml:lang="en">social consciousness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000047"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_consciousness</obo:IAO_0000119>
+        <obo:IAO_0000115>A consciousness shared by individuals within a society.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000054 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000054">
+        <rdfs:label xml:lang="en">aggressive social behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000051"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_behavior</obo:IAO_0000119>
+        <obo:IAO_0000115>A social behavior that can potentially cause or threaten physical or emotional harm.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000055 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000055">
+        <rdfs:label xml:lang="en">bullying social behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000054"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An aggressive social behavior that involves one bullying another.</obo:IAO_0000115>
+        <obo:IAO_0000118>bullying behavior</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_behavior</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000056 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000056">
+        <rdfs:label xml:lang="en">violent social behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000054"/>
+        <obo:IAO_0000118>violent behavior</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_behavior</obo:IAO_0000119>
+        <obo:IAO_0000115>An aggressive social behavior that involves violent actions among individuals.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000057 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000057">
+        <rdfs:label xml:lang="en">culture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000115>the quality in a society that arises from a concern for what is regarded as excellent in arts, letters, manners, scholarly pursuits, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.dictionary.com/browse/culture</obo:IAO_0000119>
     </owl:Class>
     
 
