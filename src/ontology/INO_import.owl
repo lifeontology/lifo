@@ -741,8 +741,8 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en">motivator role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000009"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Motivation#Herzberg&apos;s_two-factor_theory</obo:IAO_0000119>
+        <obo:IAO_0000115>an input interactor role that is borne by an entity that motivates a life process.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000115>an input interactor role that is borne by a material entity that motivates a process.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;in/ino.owl"/>
     </owl:Class>
     
@@ -754,7 +754,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en">hygiene factor role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;INO_0000009"/>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000115>an input interactor role that is borne by a material entity (e.g. status, job security, salary and fringe benefits) that do not motivate if present, but, if absent, result in demotivation.</obo:IAO_0000115>
+        <obo:IAO_0000115>an input interactor role that is borne by an entity (e.g. status, job security, salary and fringe benefits) that does not motivate if present, but, if absent, results in demotivation.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Motivation#Herzberg&apos;s_two-factor_theory</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="&obo;in/ino.owl"/>
     </owl:Class>

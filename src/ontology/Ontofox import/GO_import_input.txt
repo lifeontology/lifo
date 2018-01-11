@@ -13,6 +13,9 @@ http://purl.obolibrary.org/obo/GO_0008152 # metabolic process
 http://purl.obolibrary.org/obo/GO_0032501 # multicellular organismal process
 http://purl.obolibrary.org/obo/GO_0009987 # cellular process
 http://purl.obolibrary.org/obo/GO_0065007 # biological regulation
+http://purl.obolibrary.org/obo/GO_0044237 #cellular metabolic process
+http://purl.obolibrary.org/obo/GO_0006412 # translation
+http://purl.obolibrary.org/obo/GO_0006351 # transcription, DNA-templated
 
 http://purl.obolibrary.org/obo/GO_0044424 #intracellular part
 http://purl.obolibrary.org/obo/GO_0005737 #cytoplasm
@@ -33,6 +36,12 @@ subClassOf http://purl.obolibrary.org/obo/LifO_0000009 #life process
 
 http://purl.obolibrary.org/obo/GO_0005575 #cellular component
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+http://purl.obolibrary.org/obo/GO_0006412 # translation
+subClassOf http://purl.obolibrary.org/obo/GO_0044237 #cellular metabolic process
+
+http://purl.obolibrary.org/obo/GO_0006351 # transcription, DNA-templated
+subClassOf http://purl.obolibrary.org/obo/GO_0044237 #cellular metabolic process
 
 [Source term retrieval setting]
 includeAllIntermediates

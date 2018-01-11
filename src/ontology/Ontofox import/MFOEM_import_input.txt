@@ -9,6 +9,8 @@ http://purl.obolibrary.org/obo/MF_0000020 #mental process
 http://purl.obolibrary.org/obo/GO_0007612 #learning
 http://purl.obolibrary.org/obo/MF_0000019 #perception
 http://purl.obolibrary.org/obo/MF_0000008 #cognitive process 
+http://purl.obolibrary.org/obo/MFOEM_000001 #emotion process 
+# http://purl.obolibrary.org/obo/MFOEM_000035 #pleasure (emotion) 
 
 # http://purl.obolibrary.org/obo/OGMS_0000087 #extended organism
 http://purl.obolibrary.org/obo/MF_0000017 #consciousness
@@ -22,6 +24,9 @@ http://purl.obolibrary.org/obo/MF_0000033 #mental disposition
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/MF_0000020 #mental process 
 subClassOf http://purl.obolibrary.org/obo/LifO_0000009 #life process
+
+http://purl.obolibrary.org/obo/MFOEM_000001 #emotion process 
+subClassOf http://purl.obolibrary.org/obo/MF_0000020 #mental process 
 
 [Source term retrieval setting]
 includeAllIntermediates

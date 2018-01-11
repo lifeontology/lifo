@@ -183,13 +183,13 @@
     <rdf:Description rdf:about="&obo;INO_0000003">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
                 <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
                 <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -204,26 +204,8 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;LifO_0000013"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -236,6 +218,24 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>OneNet life</obo:IAO_0000118>
@@ -253,8 +253,8 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000001"/>
+                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -265,8 +265,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that is the part (DNA sequence) of the genetic makeup of an cell or organism which determines a specific characteristic (phenotype) of that cell or organism.</obo:IAO_0000115>
@@ -357,26 +357,8 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -411,14 +393,14 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -446,14 +428,14 @@
         <rdfs:subClassOf rdf:resource="&obo;RO_0002577"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A society is a group of people who have persistent social interactions , share the same geographical or social territory, and have common motivations.</obo:IAO_0000115>
@@ -736,6 +718,73 @@
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>A zero-dimensional temporal region that indicates a specific time point in one organism&apos;s life.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">OneNet life start time</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000043 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000043">
+        <rdfs:label xml:lang="en">effectiveness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000144"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Effectiveness</obo:IAO_0000119>
+        <obo:IAO_0000119>http://fusion.isif.org/proceedings/fusion12CD/html/pdf/313_146.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115>a process profile that represents a process’s capability to produce an effect.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000044 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000044">
+        <rdfs:label xml:lang="en">efficiency</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000043"/>
+        <obo:IAO_0000115>an effectiveness that represents a process’s capability to get a thing done, or meet a target or desire.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Efficacy</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000045 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000045">
+        <rdfs:label xml:lang="en">correctness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000043"/>
+        <obo:IAO_0000115>an effectiveness that represents a process’s capability to do a &quot;right&quot; thing, i.e., setting a right target to achieve an overall goal (the effect).</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Correctness_(computer_science)</obo:IAO_0000119>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000046 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000046">
+        <rdfs:label xml:lang="en">efficiency</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000043"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Correctness_(computer_science)</obo:IAO_0000119>
+        <obo:IAO_0000115>an effectiveness that represents a process’s capability to do a thing in the most economical way.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000047 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000047">
+        <rdfs:label xml:lang="en">society process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
+        <obo:IAO_0000115>A process that is related to life.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
