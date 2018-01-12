@@ -1029,6 +1029,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="&obo;GO_0008150">
         <rdfs:label rdf:datatype="&xsd;string">biological_process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">biological_process</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
@@ -1173,12 +1174,6 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obolibrary.org/obo/LifO_0000005 -->
-
-    <owl:Class rdf:about="&obo;LifO_0000005"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_2">
@@ -1215,17 +1210,30 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000181 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000181">
+        <rdfs:label xml:lang="en">population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000116>1/28/2013, BP, on the call it was raised that we may want to switch to an external ontology for all populatin terms: 
+http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">PMID12564891. Environ Sci Technol. 2003 Jan 15;37(2):223-8. Effects of historic PCB exposures on the reproductive success of the Hudson River striped bass population.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">adapted from Oxford English Dictionnary</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">population</obo:IAO_0000111>
+        <obo:IAO_0000232 xml:lang="en">rem1: collection somehow always involve a selection process</obo:IAO_0000232>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000725 -->
 
     <owl:Class rdf:about="&obo;OBI_0000725">
         <rdfs:label rdf:datatype="&xsd;string">host role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">30 Mar09 submitted by vaccine community</obo:IAO_0000119>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">30Mar09 virus reproducing inside a cell; bacteria causing a disease, host can be harmed or not.  we want to avoid a cat sitting on my lap and an animal care technician; these are not examples or hosts; dental cares = on tooth, but part of outer layer of tooth, so covered by &quot;within&quot; in the definition</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP: Role Branch</obo:IAO_0000117>
