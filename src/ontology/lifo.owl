@@ -183,13 +183,13 @@
     <rdf:Description rdf:about="&obo;INO_0000003">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
                 <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
                 <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -204,14 +204,8 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000013"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -222,20 +216,26 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;LifO_0000007"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>OneNet life</obo:IAO_0000118>
@@ -253,14 +253,14 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
+                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -802,14 +802,14 @@
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A society that exists to promote an academic discipline, profession, or a group of related disciplines such as the arts.</obo:IAO_0000115>
@@ -826,14 +826,14 @@
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -1012,6 +1012,48 @@
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>An interaction between two or more individuals or populations in a society. Social interaction is a building block of society.</obo:IAO_0000115>
         <obo:IAO_0000119>https://courses.lumenlearning.com/boundless-sociology/chapter/understanding-social-interaction/</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000062 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000062">
+        <rdfs:label xml:lang="en">social rule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a realizable entity, such as norm, law, regulation, that is realized in social behavior.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_rule_system_theory</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000063 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000063">
+        <rdfs:label xml:lang="en">social norm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000062"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Social_norm</obo:IAO_0000119>
+        <obo:IAO_0000115>informal understanding that governs the behavior of the members of a society</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000064 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000064">
+        <rdfs:label xml:lang="en">law</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000062"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Law</obo:IAO_0000119>
+        <obo:IAO_0000115>a social rule that is created and enforced through social or governmental institutions to regulate behavior in a society.</obo:IAO_0000115>
     </owl:Class>
     
 
