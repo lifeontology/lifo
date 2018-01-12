@@ -450,6 +450,12 @@
     <owl:Class rdf:about="&obo;LifO_0000015">
         <rdfs:label xml:lang="en">society motive</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>a social motive that is made by a society to achieve.</obo:IAO_0000119>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
     </owl:Class>
@@ -941,6 +947,12 @@
     <owl:Class rdf:about="&obo;LifO_0000058">
         <rdfs:label xml:lang="en">social motive</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>An incentive or drive resulting from a sociocultural influence that initiates behavior toward a particular goal.</obo:IAO_0000119>
         <obo:IAO_0000119>https://medical-dictionary.thefreedictionary.com/social+motivation</obo:IAO_0000119>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
