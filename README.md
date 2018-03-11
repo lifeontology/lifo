@@ -19,4 +19,4 @@ Use the following URI to download this ontology
 
 The OneNet Theory of Life can be cited as:
 
-He Y. <b>Ontology-based vaccine and drug adverse event representation and theory-guided systematic causal network analysis towards integrative pharmacovigilance research</b>. <i>Current Pharmacology Reports</i>. 2016 Jun;2(3):113-128. <a href="http://www.dx.doi.org/10.1007/s40495-016-0055-0">DOI: 10.1007/s40495-016-0055-0</a>. PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=27458549">27458549</a>. PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4957564/">PMC4957564</a>.
+He Y. <b>Ontology-based vaccine and drug adverse event representation and theory-guided systematic causal network analysis towards integrative pharmacovigilance research</b>. <i>Current Pharmacology Reports</i>. 2016 Jun;2(3):113-128. DOI: <a href="http://www.dx.doi.org/10.1007/s40495-016-0055-0">10.1007/s40495-016-0055-0</a>. PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=27458549">27458549</a>. PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4957564/">PMC4957564</a>.
