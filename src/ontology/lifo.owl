@@ -22,12 +22,12 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;lifo.owl">
-        <dc:date xml:lang="en">01-12-2018</dc:date>
+        <dc:date xml:lang="en">03-11-2018</dc:date>
         <dc:description xml:lang="en">LifO is a formal ontology that represents the life processes of organisms and related entities and relations. LifO is a general purpose ontology that covers the common features associated with different types of organisms such as unicellular prokaryotes (e.g., E. coli) and multicellular organisms (e.g., humans). </dc:description>
         <dc:title xml:lang="en">LifO: Life Ontology</dc:title>
         <dc:subject xml:lang="en">LifO: The general ontology about the life of organisms such as humans</dc:subject>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.14</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.15</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;lifo/BFO_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/CHEBI_import.owl"/>
@@ -35,12 +35,13 @@
         <owl:imports rdf:resource="&obo;lifo/GO_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/INO_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/MFOEM_import.owl"/>
+        <owl:imports rdf:resource="&obo;lifo/NCBITaxon_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/OBI_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/OGG_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/OGMS_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/PR_import.owl"/>
         <owl:imports rdf:resource="&obo;lifo/RO_import.owl"/>
-        <owl:imports rdf:resource="&obo;ohmi/NCBITaxon_imports.owl"/>
+        <owl:imports rdf:resource="&obo;lifo/UBERON_import.owl"/>
     </owl:Ontology>
     
 
@@ -183,13 +184,13 @@
     <rdf:Description rdf:about="&obo;INO_0000003">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
                 <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
                 <owl:someValuesFrom rdf:resource="&obo;INO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -200,30 +201,18 @@
     <!-- http://purl.obolibrary.org/obo/LifO_0000001 -->
 
     <owl:Class rdf:about="&obo;LifO_0000001">
-        <rdfs:label xml:lang="en">life</rdfs:label>
+        <rdfs:label>life</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000013"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -234,14 +223,32 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000006"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>OneNet life</obo:IAO_0000118>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;ENVO_01000254"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
         <obo:IAO_0000115>An integrative interaction network process of an organism that starts from the moment when the first cell forms, has its blueprint stored in the genotype, and performs its dynamic process by interacting with its environment to achieve its survival and other motivations.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">OneNet life</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -253,12 +260,6 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGG_0000000002"/>
             </owl:Restriction>
@@ -267,6 +268,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGG_0000000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;LifO_0000008"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material entity that is the part (DNA sequence) of the genetic makeup of an cell or organism which determines a specific characteristic (phenotype) of that cell or organism.</obo:IAO_0000115>
@@ -347,9 +354,9 @@
     <!-- http://purl.obolibrary.org/obo/LifO_0000006 -->
 
     <owl:Class rdf:about="&obo;LifO_0000006">
-        <rdfs:label>first cell formation moment</rdfs:label>
+        <rdfs:label>the first cell formation moment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000042"/>
-        <obo:IAO_0000115>A time point when the first cell of a multicellular organism (or the cell of a single cell organism) just forms. This is the time when the OneNet life process of an organism just starts based on the OneNet theory of life.</obo:IAO_0000115>
+        <obo:IAO_0000115>A time point when the first cell of a multicellular organism or the cell of a single cell organism just forms. This is the time when the OneNet life process of an organism just starts based on the OneNet theory of life.</obo:IAO_0000115>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">OneNet life start time</obo:IAO_0000118>
     </owl:Class>
@@ -369,7 +376,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Life</obo:IAO_0000119>
-        <obo:IAO_0000115>A process that is related to life.</obo:IAO_0000115>
+        <obo:IAO_0000115>A process that is performed by a life organism or a component of the life organism.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -399,14 +406,14 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000010"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -832,14 +839,14 @@
         <rdfs:subClassOf rdf:resource="&obo;LifO_0000014"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;LifO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;LifO_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;LifO_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
@@ -1060,6 +1067,17 @@
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Law</obo:IAO_0000119>
         <obo:IAO_0000115>a social rule that is created and enforced through social or governmental institutions to regulate behavior in a society.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/LifO_0000065 -->
+
+    <owl:Class rdf:about="&obo;LifO_0000065">
+        <rdfs:label xml:lang="en">life death moment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000042"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A time point when a life organism just dies.</obo:IAO_0000115>
     </owl:Class>
     
 

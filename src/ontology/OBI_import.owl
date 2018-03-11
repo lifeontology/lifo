@@ -1029,7 +1029,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:Class rdf:about="&obo;GO_0008150">
         <rdfs:label rdf:datatype="&xsd;string">biological_process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">biological_process</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>

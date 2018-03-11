@@ -17,6 +17,41 @@ http://purl.obolibrary.org/obo/GO_0044237 #cellular metabolic process
 http://purl.obolibrary.org/obo/GO_0006412 # translation
 http://purl.obolibrary.org/obo/GO_0006351 # transcription, DNA-templated
 
+http://purl.obolibrary.org/obo/GO_0031099 #regeneration
+http://purl.obolibrary.org/obo/GO_0006091 #generation of precursor metabolites and energy
+http://purl.obolibrary.org/obo/GO_0006754 #ATP biosynthetic process
+http://purl.obolibrary.org/obo/GO_0050896 #response to stimulus
+http://purl.obolibrary.org/obo/GO_0006955 #immune response
+http://purl.obolibrary.org/obo/GO_0009605 #response to external stimulus
+http://purl.obolibrary.org/obo/GO_0009719 #response to endogenous stimulus
+http://purl.obolibrary.org/obo/GO_0002250 #adaptive IR
+http://purl.obolibrary.org/obo/GO_0045087 #innate IR
+http://purl.obolibrary.org/obo/GO_0001775 #cell activation
+http://purl.obolibrary.org/obo/GO_0007154 #cell communication
+http://purl.obolibrary.org/obo/GO_0006928 #Cell movement
+http://purl.obolibrary.org/obo/GO_0048870 #cell motility
+http://purl.obolibrary.org/obo/GO_0040011 #locomation
+http://purl.obolibrary.org/obo/GO_0006935 #chemotaxis
+http://purl.obolibrary.org/obo/GO_0009453 #energy taxis
+http://purl.obolibrary.org/obo/GO_0040007 #Growth
+http://purl.obolibrary.org/obo/GO_0016049 #Cell growth
+http://purl.obolibrary.org/obo/GO_0048589 #Developmental growth
+http://purl.obolibrary.org/obo/GO_0035265 #organ growth
+http://purl.obolibrary.org/obo/GO_0030154 #cell differentiation
+http://purl.obolibrary.org/obo/GO_0065007 #Biological regulation
+
+http://purl.obolibrary.org/obo/GO_0003012 #muscle system process
+http://purl.obolibrary.org/obo/GO_0003013 #circulatory system process
+http://purl.obolibrary.org/obo/GO_0003016 #respiratory system process
+http://purl.obolibrary.org/obo/GO_0050886 #endocrine process
+http://purl.obolibrary.org/obo/GO_0003014 #renal system process
+http://purl.obolibrary.org/obo/GO_0022600 #digestive system process
+http://purl.obolibrary.org/obo/GO_0050877 #nervous system process
+
+http://purl.obolibrary.org/obo/GO_0007610 #behavior 
+http://purl.obolibrary.org/obo/GO_0042756 #drinking behavior
+http://purl.obolibrary.org/obo/GO_0042755 #eating behavior 
+
 http://purl.obolibrary.org/obo/GO_0044424 #intracellular part
 http://purl.obolibrary.org/obo/GO_0005737 #cytoplasm
 http://purl.obolibrary.org/obo/GO_0005634 #nucleus
@@ -25,10 +60,6 @@ http://purl.obolibrary.org/obo/GO_0016020 #membrane
 http://purl.obolibrary.org/obo/GO_0044421 #extracellular region space
 http://purl.obolibrary.org/obo/GO_0043245 #extraorganismal space
 http://purl.obolibrary.org/obo/GO_0043655 #extracellular space of host
-
-http://purl.obolibrary.org/obo/GO_0007610 #behavior 
-http://purl.obolibrary.org/obo/GO_0042756 #drinking behavior
-http://purl.obolibrary.org/obo/GO_0042755 #eating behavior 
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/GO_0008150 #biological process
@@ -43,8 +74,12 @@ subClassOf http://purl.obolibrary.org/obo/GO_0044237 #cellular metabolic process
 http://purl.obolibrary.org/obo/GO_0006351 # transcription, DNA-templated
 subClassOf http://purl.obolibrary.org/obo/GO_0044237 #cellular metabolic process
 
+http://purl.obolibrary.org/obo/GO_0006754 #ATP biosynthetic process
+subClassOf http://purl.obolibrary.org/obo/GO_0006091 #generation of precursor metabolites and energy
+
+
 [Source term retrieval setting]
-includeAllIntermediates
+includeComputedIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties

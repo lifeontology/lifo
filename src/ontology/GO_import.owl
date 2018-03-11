@@ -1,13 +1,25 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/lifo/GO_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/lifo/GO_import.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;lifo/GO_import.owl#"
+     xml:base="&obo;lifo/GO_import.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/lifo/GO_import.owl"/>
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="&obo;lifo/GO_import.owl"/>
     
 
 
@@ -19,52 +31,116 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
+        <rdfs:label rdf:datatype="&xsd;string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasNarrowSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
 
@@ -81,48 +157,154 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    <owl:Class rdf:about="&obo;BFO_0000040"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0000003">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproduction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0000003</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0019952</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0050876</oboInOwl:hasAlternativeId>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Reproduction</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive physiological process</oboInOwl:hasExactSynonym>
+    <owl:Class rdf:about="&obo;GO_0000003">
+        <rdfs:label rdf:datatype="&xsd;string">reproduction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0000003</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0019952</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0050876</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Reproduction</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive physiological process</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001775 -->
+
+    <owl:Class rdf:about="&obo;GO_0001775">
+        <rdfs:label rdf:datatype="&xsd;string">cell activation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009987"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A change in the morphology or behavior of a cell resulting from exposure to an activating factor such as a cellular or soluble ligand.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001775</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0002250 -->
+
+    <owl:Class rdf:about="&obo;GO_0002250">
+        <rdfs:label rdf:datatype="&xsd;string">adaptive immune response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006955"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An immune response mediated by cells expressing specific receptors for antigen produced through a somatic diversification process, and allowing for an enhanced secondary response to subsequent exposures to the same antigen (immunological memory).</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0002250</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">This term was added by GO_REF:0000022.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Adaptive_immune_system</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acquired immune response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">immune memory response</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003008 -->
+
+    <owl:Class rdf:about="&obo;GO_0003008">
+        <rdfs:label rdf:datatype="&xsd;string">system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032501"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003008</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">organ system process</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003012 -->
+
+    <owl:Class rdf:about="&obo;GO_0003012">
+        <rdfs:label rdf:datatype="&xsd;string">muscle system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003008"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A organ system process carried out at the level of a muscle. Muscle tissue is composed of contractile cells or fibers.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003012</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">muscle physiological process</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003013 -->
+
+    <owl:Class rdf:about="&obo;GO_0003013">
+        <rdfs:label rdf:datatype="&xsd;string">circulatory system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003008"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A organ system process carried out by any of the organs or tissues of the circulatory system. The circulatory system is an organ system that moves extracellular fluids to and from tissue within a multicellular organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003013</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Circulatory_system</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003014 -->
+
+    <owl:Class rdf:about="&obo;GO_0003014">
+        <rdfs:label rdf:datatype="&xsd;string">renal system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003008"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A organ system process carried out by any of the organs or tissues of the renal system. The renal system maintains fluid balance, and contributes to electrolyte balance, acid/base balance, and disposal of nitrogenous waste products. In humans, the renal system comprises a pair of kidneys, a pair of ureters, urinary bladder, urethra, sphincter muscle and associated blood vessels; in other species, the renal system may comprise related structures (e.g., nephrocytes and malpighian tubules in Drosophila).</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003014</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">excretory system process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">kidney system process</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003016 -->
+
+    <owl:Class rdf:about="&obo;GO_0003016">
+        <rdfs:label rdf:datatype="&xsd;string">respiratory system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003008"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032501"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A system process carried out by the organs and tissues of the respiratory system. The respiratory system is an organ system responsible for respiratory gaseous exchange.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003016</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0010802</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">respiratory gaseous exchange by respiratory system</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005575</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008372</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao-1337158144</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of a cell, extracellular environment or virus in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell or subcellular entity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular component</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcellular entity</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0005575">
+        <rdfs:label rdf:datatype="&xsd;string">cellular_component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0005575</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0008372</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Subcellular:sao-1337158144</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The part of a cell, extracellular environment or virus in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cell or subcellular entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular component</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">subcellular entity</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
@@ -132,22 +314,23 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0005634 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005634">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleus</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043231"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell&#39;s chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005634</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1702920020</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cell_nucleus</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell nucleus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="&obo;GO_0005634">
+        <rdfs:label rdf:datatype="&xsd;string">nucleus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0043231"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell&apos;s chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0005634</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Subcellular:sao1702920020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cell_nucleus</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cell nucleus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">horsetail nucleus</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
@@ -158,20 +341,20 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0005737 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005737">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytoplasm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044424"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005737</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cytoplasm</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="&obo;GO_0005737">
+        <rdfs:label rdf:datatype="&xsd;string">cytoplasm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044424"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0005737</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cytoplasm</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
@@ -179,24 +362,24 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0005739 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005739">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitochondrion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043231"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044444"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005739</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1860313010</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some anaerobic or microaerophilic organisms (e.g. Entamoeba histolytica, Giardia intestinalis and several Microsporidia species) do not have mitochondria, and contain mitochondrion-related organelles (MROs) instead, called mitosomes or hydrogenosomes, very likely derived from mitochondria. To annotate gene products located in these mitochondrial relics in species such as Entamoeba histolytica, Giardia intestinalis or others, please use GO:0032047 &#39;mitosome&#39; or GO:0042566 &#39;hydrogenosome&#39;. (See PMID:24316280 for a list of species currently known to contain mitochondrion-related organelles.)</rdfs:comment>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Mitochondrion</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitochondria</oboInOwl:hasExactSynonym>
+    <owl:Class rdf:about="&obo;GO_0005739">
+        <rdfs:label rdf:datatype="&xsd;string">mitochondrion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0043231"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044424"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0005739</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Subcellular:sao1860313010</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">Some anaerobic or microaerophilic organisms (e.g. Entamoeba histolytica, Giardia intestinalis and several Microsporidia species) do not have mitochondria, and contain mitochondrion-related organelles (MROs) instead, called mitosomes or hydrogenosomes, very likely derived from mitochondria. To annotate gene products located in these mitochondrial relics in species such as Entamoeba histolytica, Giardia intestinalis or others, please use GO:0032047 &apos;mitosome&apos; or GO:0042566 &apos;hydrogenosome&apos;. (See PMID:24316280 for a list of species currently known to contain mitochondrion-related organelles.)</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Mitochondrion</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mitochondria</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
@@ -206,75 +389,100 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006091 -->
+
+    <owl:Class rdf:about="&obo;GO_0006091">
+        <rdfs:label rdf:datatype="&xsd;string">generation of precursor metabolites and energy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044237"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006091</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The chemical reactions and pathways resulting in the formation of precursor metabolites, substances from which energy is derived, and any process involved in the liberation of energy from these substances.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">energy pathways</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">intermediary metabolism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">metabolic energy generation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0006351 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006351">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcription, DNA-templated</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA-dependent transcription</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0006350</oboInOwl:hasAlternativeId>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0006351</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0061018</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0061022</oboInOwl:hasAlternativeId>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The cellular synthesis of RNA on a template of DNA.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Transcription_(genetics)</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular transcription</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular transcription, DNA-dependent</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcription</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcription regulator activity</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transcription, DNA-dependent</oboInOwl:hasExactSynonym>
+    <owl:Class rdf:about="&obo;GO_0006351">
+        <rdfs:label rdf:datatype="&xsd;string">transcription, DNA-templated</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044237"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">DNA-dependent transcription</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006350</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006351</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0061018</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0061022</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The cellular synthesis of RNA on a template of DNA.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Transcription_(genetics)</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">cellular transcription</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular transcription, DNA-dependent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">transcription</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">transcription regulator activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transcription, DNA-dependent</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pombe"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0006412 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006412">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">translation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0006412</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0006416</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0006453</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043037</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_100338</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_100851</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_101045</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_101324</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_1014</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_103420</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_105544</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_29980</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_33559</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_77710</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_79784</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_81734</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_81833</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_82171</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_83429</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_83530</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_86996</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_95535</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:REACT_96394</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Translation_(genetics)</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein anabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein biosynthesis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein biosynthetic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein formation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein synthesis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein translation</oboInOwl:hasExactSynonym>
+    <owl:Class rdf:about="&obo;GO_0006412">
+        <rdfs:label rdf:datatype="&xsd;string">translation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044237"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006412</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006416</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006453</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0043037</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_100338</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_100851</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_101045</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_101324</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_1014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_103420</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_105544</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_29980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_33559</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_77710</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_79784</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_81734</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_81833</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_82171</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_83429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_83530</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_86996</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_95535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_96394</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Translation_(genetics)</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">protein anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">protein biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">protein biosynthetic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">protein formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">protein synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">protein translation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
@@ -283,77 +491,182 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006754 -->
+
+    <owl:Class rdf:about="&obo;GO_0006754">
+        <rdfs:label rdf:datatype="&xsd;string">ATP biosynthetic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006091"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ATP anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ATP biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ATP formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ATP regeneration</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ATP synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006754</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006758</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006759</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_102219</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_104315</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_105384</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_106830</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_109466</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_190</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_28537</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_31626</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_33014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_78557</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_86305</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_88682</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_90150</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_92655</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_96844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_991</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The chemical reactions and pathways resulting in the formation of ATP, adenosine 5&apos;-triphosphate, a universally important coenzyme and enzyme regulator.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006928 -->
+
+    <owl:Class rdf:about="&obo;GO_0006928">
+        <rdfs:label rdf:datatype="&xsd;string">movement of cell or subcellular component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009987"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006928</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that in GO cellular components include whole cells (cell is_a cellular component).</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed, self-propelled movement of a cell or subcellular component without the involvement of an external agent such as a transporter or a pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">cell movement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular component motion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular component movement</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goantislim_grouping"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006935 -->
+
+    <owl:Class rdf:about="&obo;GO_0006935">
+        <rdfs:label rdf:datatype="&xsd;string">chemotaxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0042330"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006935</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of a motile cell or organism, or the directed growth of a cell guided by a specific chemical concentration gradient. Movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Chemotaxis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">taxis in response to chemical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006955 -->
+
+    <owl:Class rdf:about="&obo;GO_0006955">
+        <rdfs:label rdf:datatype="&xsd;string">immune response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050896"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006955</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">This term was improved by GO_REF:0000022. It was redefined and moved.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007154 -->
+
+    <owl:Class rdf:about="&obo;GO_0007154">
+        <rdfs:label rdf:datatype="&xsd;string">cell communication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009987"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that mediates interactions between a cell and its surroundings. Encompasses interactions such as signaling or attachment between one cell and another cell, between a cell and an extracellular matrix, or between a cell and any other aspect of its environment.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007154</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cell_signaling</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
+    <owl:Class rdf:about="&obo;GO_0007610">
+        <rdfs:label rdf:datatype="&xsd;string">behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <rdfs:comment rdf:datatype="&xsd;string">1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
 2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).</rdfs:comment>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-20T14:06:08Z</oboInOwl:creation_date>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0007610</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044708</oboInOwl:hasAlternativeId>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Behavior</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioral response to stimulus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behaviour</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioural response to stimulus</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">janelomax</oboInOwl:created_by>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism behavior</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-09-20T14:06:08Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007610</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0044708</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Behavior</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioral response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behaviour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioural response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">single-organism behavior</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0007631 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007631">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feeding behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavior associated with the intake of food.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0007631</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">See also the biological process term &#39;behavior ; GO:0007610&#39;.</rdfs:comment>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:List_of_feeding_behaviours</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioral response to food</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioural response to food</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drinking</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eating</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feeding behaviour</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    <owl:Class rdf:about="&obo;GO_0007631">
+        <rdfs:label rdf:datatype="&xsd;string">feeding behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Behavior associated with the intake of food.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007631</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the biological process term &apos;behavior ; GO:0007610&apos;.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:List_of_feeding_behaviours</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioral response to food</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioural response to food</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">drinking</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">eating</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">feeding behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/LifO_0000009"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-19T15:05:24Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0000004</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0007582</oboInOwl:hasAlternativeId>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008150</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044699</oboInOwl:hasAlternativeId>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Biological_process</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">janelomax</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiological process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single organism process</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism process</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0008150">
+        <rdfs:label rdf:datatype="&xsd;string">biological_process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;LifO_0000009"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0008150</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0044699</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">single-organism process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
@@ -364,73 +677,124 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pombe"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0008152 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008152">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metabolic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-10-17T15:46:40Z</oboInOwl:creation_date>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008152</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044710</oboInOwl:hasAlternativeId>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.</rdfs:comment>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Metabolism</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">janelomax</oboInOwl:created_by>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metabolic process resulting in cell growth</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metabolism resulting in cell growth</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism metabolic process</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0008152">
+        <rdfs:label rdf:datatype="&xsd;string">metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-10-17T15:46:40Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0008152</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0044710</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Metabolism</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">metabolic process resulting in cell growth</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">metabolism resulting in cell growth</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">single-organism metabolic process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009453 -->
+
+    <owl:Class rdf:about="&obo;GO_0009453">
+        <rdfs:label rdf:datatype="&xsd;string">energy taxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0042330"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009453</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of a motile cell or organism in response to physical parameters involved in energy generation, such as light, oxygen, and oxidizable substrates.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">energytaxis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">taxis in response to energy source</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009605 -->
+
+    <owl:Class rdf:about="&obo;GO_0009605">
+        <rdfs:label rdf:datatype="&xsd;string">response to external stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050896"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an external stimulus.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009605</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">response to environmental stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009719 -->
+
+    <owl:Class rdf:about="&obo;GO_0009719">
+        <rdfs:label rdf:datatype="&xsd;string">response to endogenous stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050896"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus arising within the organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009719</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-12-11T16:56:55Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008151</oboInOwl:hasAlternativeId>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009987</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044763</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0050875</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell growth and/or maintenance</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell physiology</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular physiological process</oboInOwl:hasExactSynonym>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">janelomax</oboInOwl:created_by>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism cellular process</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0009987">
+        <rdfs:label rdf:datatype="&xsd;string">cellular process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-12-11T16:56:55Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0008151</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009987</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0044763</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0050875</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">cell growth and/or maintenance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cell physiology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">single-organism cellular process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0016020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016020">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">membrane</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lipid bilayer along with all the proteins and protein complexes embedded in it an attached to it.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0016020</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Biological_membrane</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="&obo;GO_0016020">
+        <rdfs:label rdf:datatype="&xsd;string">membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0005575"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A lipid bilayer along with all the proteins and protein complexes embedded in it an attached to it.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0016020</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Biological_membrane</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
@@ -439,333 +803,523 @@
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016049 -->
+
+    <owl:Class rdf:about="&obo;GO_0016049">
+        <rdfs:label rdf:datatype="&xsd;string">cell growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009987"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0040007"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0016049</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0048591</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">cell expansion</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular growth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">growth of cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">metabolic process resulting in cell growth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">metabolism resulting in cell growth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">non-developmental cell growth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">non-developmental growth of a unicellular organism</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0022600 -->
+
+    <owl:Class rdf:about="&obo;GO_0022600">
+        <rdfs:label rdf:datatype="&xsd;string">digestive system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003008"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A physical, chemical, or biochemical process carried out by living organisms to break down ingested nutrients into components that may be easily absorbed and directed into metabolism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0022600</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0030154 -->
+
+    <owl:Class rdf:about="&obo;GO_0030154">
+        <rdfs:label rdf:datatype="&xsd;string">cell differentiation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048869"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0030154</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism&apos;s life history. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Cellular_differentiation</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_mouse"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0031099 -->
+
+    <owl:Class rdf:about="&obo;GO_0031099">
+        <rdfs:label rdf:datatype="&xsd;string">regeneration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0031099</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The regrowth of a lost or destroyed body part, such as an organ or tissue. This process may occur via renewal, repair, and/or growth alone (i.e. increase in size or mass).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Regeneration_(biology)</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0032501 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032501">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicellular organismal process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-09-19T16:07:47Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any biological process, occurring at the level of a multicellular organism, pertinent to its function.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0032501</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044707</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0050874</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">janelomax</oboInOwl:created_by>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organismal physiological process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-multicellular organism process</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0032501">
+        <rdfs:label rdf:datatype="&xsd;string">multicellular organismal process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-09-19T16:07:47Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any biological process, occurring at the level of a multicellular organism, pertinent to its function.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0032501</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0044707</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0050874</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">organismal physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">single-multicellular organism process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0032502 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032502">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developmental process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-12-19T12:21:31Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0032502</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044767</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">development</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">janelomax</oboInOwl:created_by>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism developmental process</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0032502">
+        <rdfs:label rdf:datatype="&xsd;string">developmental process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-12-19T12:21:31Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0032502</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0044767</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">development</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">single-organism developmental process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035265 -->
+
+    <owl:Class rdf:about="&obo;GO_0035265">
+        <rdfs:label rdf:datatype="&xsd;string">organ growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032501"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048589"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035265</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The increase in size or mass of an organ. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that function together as to perform a specific function.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0040007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0040007">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growth</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0040007</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0048590</oboInOwl:hasAlternativeId>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">See also the biological process term &#39;cell growth ; GO:0016049&#39;.</rdfs:comment>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The increase in size or mass of an entire organism, a part of an organism or a cell.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growth pattern</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-developmental growth</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0040007">
+        <rdfs:label rdf:datatype="&xsd;string">growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0040007</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0048590</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the biological process term &apos;cell growth ; GO:0016049&apos;.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The increase in size or mass of an entire organism, a part of an organism or a cell.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">growth pattern</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">non-developmental growth</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0040011 -->
+
+    <owl:Class rdf:about="&obo;GO_0040011">
+        <rdfs:label rdf:datatype="&xsd;string">locomotion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0040011</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Self-propelled movement of a cell or organism from one location to another.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042330 -->
+
+    <owl:Class rdf:about="&obo;GO_0042330">
+        <rdfs:label rdf:datatype="&xsd;string">taxis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0040011"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042330</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of a motile cell or organism in response to an external stimulus.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Taxis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">directed movement in response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0042755 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042755">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eating behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007631"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0042755</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism relating to the intake of food, any substance (usually solid) that can be metabolized by an organism to give energy and build tissue.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eating behaviour</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    <owl:Class rdf:about="&obo;GO_0042755">
+        <rdfs:label rdf:datatype="&xsd;string">eating behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007631"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042755</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific behavior of an organism relating to the intake of food, any substance (usually solid) that can be metabolized by an organism to give energy and build tissue.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">eating behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0042756 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042756">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drinking behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007631"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0042756</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism relating to the intake of liquids, especially water.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drinking behaviour</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    <owl:Class rdf:about="&obo;GO_0042756">
+        <rdfs:label rdf:datatype="&xsd;string">drinking behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007631"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042756</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific behavior of an organism relating to the intake of liquids, especially water.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">drinking behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0043226 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043226">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organelle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043226</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1539965131</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Organelle</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="&obo;GO_0043226">
+        <rdfs:label rdf:datatype="&xsd;string">organelle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0005575"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0043226</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Subcellular:sao1539965131</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Organelle</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0043227 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043227">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">membrane-bounded organelle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043227</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao414196390</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">membrane-enclosed organelle</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0043229 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043229">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intracellular organelle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044424"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043229</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="&obo;GO_0043229">
+        <rdfs:label rdf:datatype="&xsd;string">intracellular organelle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0043226"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044424"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0043229</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0043231 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043231">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intracellular membrane-bounded organelle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043227"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043229"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043231</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane and occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intracellular membrane-enclosed organelle</oboInOwl:hasExactSynonym>
+    <owl:Class rdf:about="&obo;GO_0043231">
+        <rdfs:label rdf:datatype="&xsd;string">intracellular membrane-bounded organelle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0043226"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0043229"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0043231</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane and occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">intracellular membrane-enclosed organelle</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0043245 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043245">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extraorganismal space</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044421"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043245</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The environmental space outside of an organism; this may be a host organism in the case of parasitic and symbiotic organisms.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="&obo;GO_0043245">
+        <rdfs:label rdf:datatype="&xsd;string">extraorganismal space</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044421"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0043245</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The environmental space outside of an organism; this may be a host organism in the case of parasitic and symbiotic organisms.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0043655 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043655">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extracellular space of host</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044217"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044421"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043655</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The space within a host but external to the plasma membrane of host cells, e.g. within host bloodstream.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">host extracellular space</oboInOwl:hasExactSynonym>
+    <owl:Class rdf:about="&obo;GO_0043655">
+        <rdfs:label rdf:datatype="&xsd;string">extracellular space of host</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0005575"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044421"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0043655</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The space within a host but external to the plasma membrane of host cells, e.g. within host bloodstream.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">host extracellular space</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044217 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044217">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other organism part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-11-12T01:18:21Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constituent part of a secondary organism with which the first organism is interacting.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044217</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jane</oboInOwl:created_by>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_annotate"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0044237 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044237">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular metabolic process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044237</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The chemical reactions and pathways by which individual cells transform chemical substances.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intermediary metabolism</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0044237">
+        <rdfs:label rdf:datatype="&xsd;string">cellular metabolic process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008152"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009987"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0044237</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The chemical reactions and pathways by which individual cells transform chemical substances.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular metabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">intermediary metabolism</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0044421 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044421">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extracellular region part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constituent part of the extracellular region, the space external to the outermost structure of a cell. For cells without external protective or external encapsulating structures this refers to space outside of the plasma membrane. This term covers constituent parts of the host cell environment outside an intracellular parasite.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044421</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao9117790637</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extracellular structure</oboInOwl:hasRelatedSynonym>
+    <owl:Class rdf:about="&obo;GO_0044421">
+        <rdfs:label rdf:datatype="&xsd;string">extracellular region part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0005575"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any constituent part of the extracellular region, the space external to the outermost structure of a cell. For cells without external protective or external encapsulating structures this refers to space outside of the plasma membrane. This term covers constituent parts of the host cell environment outside an intracellular parasite.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0044421</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Subcellular:sao9117790637</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">extracellular structure</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goantislim_grouping"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0044424 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044424">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intracellular part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constituent part of the living contents of a cell; the matter contained within (but not including) the plasma membrane, usually taken to exclude large vacuoles and masses of secretory or ingested material. In eukaryotes it includes the nucleus and cytoplasm.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044424</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+    <owl:Class rdf:about="&obo;GO_0044424">
+        <rdfs:label rdf:datatype="&xsd;string">intracellular part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0005575"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any constituent part of the living contents of a cell; the matter contained within (but not including) the plasma membrane, usually taken to exclude large vacuoles and masses of secretory or ingested material. In eukaryotes it includes the nucleus and cytoplasm.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0044424</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goantislim_grouping"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0044444 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0045087 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044444">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytoplasmic part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044424"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constituent part of the cytoplasm, all of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044444</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytoplasm component</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goantislim_grouping"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_annotate"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    <owl:Class rdf:about="&obo;GO_0045087">
+        <rdfs:label rdf:datatype="&xsd;string">innate immune response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006955"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0002226</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0045087</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Innate immune responses are defense responses mediated by germline encoded components that directly recognize components of potential pathogens.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_101086</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_108180</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_110518</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_31297</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_32992</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_6802</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_78575</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_81815</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_81962</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_86987</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_88681</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_90618</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_90753</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_94451</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_95471</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_95642</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Reactome:REACT_99610</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">This term was improved by GO_REF:0000022. It was moved.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Innate_immune_system</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">innate immunity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">nonspecific immune response</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0044464 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0048589 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044464">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any constituent part of a cell, the basic structural and functional unit of all organisms.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0044464</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao628508602</oboInOwl:hasDbXref>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular subcomponent</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protoplast</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goantislim_grouping"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_annotate"/>
+    <owl:Class rdf:about="&obo;GO_0048589">
+        <rdfs:label rdf:datatype="&xsd;string">developmental growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0040007"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048589</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The increase in size or mass of an entire organism, a part of an organism or a cell, where the increase in size or mass has the specific outcome of the progression of the organism over time from one condition to another.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048869 -->
+
+    <owl:Class rdf:about="&obo;GO_0048869">
+        <rdfs:label rdf:datatype="&xsd;string">cellular developmental process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009987"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048869</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048870 -->
+
+    <owl:Class rdf:about="&obo;GO_0048870">
+        <rdfs:label rdf:datatype="&xsd;string">cell motility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006928"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0040011"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process involved in the controlled self-propelled movement of a cell that results in translocation of the cell from one place to another.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048870</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cell locomotion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">cell movement</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">movement of a cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050877 -->
+
+    <owl:Class rdf:about="&obo;GO_0050877">
+        <rdfs:label rdf:datatype="&xsd;string">nervous system process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003008"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A organ system process carried out by any of the organs or tissues of neurological system.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Discussion of class label and synonyms: https://github.com/geneontology/go-ontology/issues/13824</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050877</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neurological system process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neurophysiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">pan-neural process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050886 -->
+
+    <owl:Class rdf:about="&obo;GO_0050886">
+        <rdfs:label rdf:datatype="&xsd;string">endocrine process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003008"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050886</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process that involves the secretion of or response to endocrine hormones. An endocrine hormone is a hormone released into the circulatory system.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">endocrine physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">endocrine physiology</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050896 -->
+
+    <owl:Class rdf:about="&obo;GO_0050896">
+        <rdfs:label rdf:datatype="&xsd;string">response to stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050896</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0051869</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">physiological response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_mouse"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0065007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065007">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological regulation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that modulates a measurable attribute of any biological process, quality or function.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0065007</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation</oboInOwl:hasBroadSynonym>
+    <owl:Class rdf:about="&obo;GO_0065007">
+        <rdfs:label rdf:datatype="&xsd;string">biological regulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process that modulates a measurable attribute of any biological process, quality or function.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0065007</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">regulation</oboInOwl:hasBroadSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#gosubset_prok"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/LifO_0000009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/LifO_0000009"/>
+    <owl:Class rdf:about="&obo;LifO_0000009"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
