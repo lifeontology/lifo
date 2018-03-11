@@ -12,5 +12,4 @@ Use the following URI to download this ontology
 
 # Browsing
 
-* Default browsing in Ontobee: ... 
-* Browsing in NCBO BioPortal: ... 
+* Browsing in NCBO BioPortal: http://bioportal.bioontology.org/ontologies/LIFO  
