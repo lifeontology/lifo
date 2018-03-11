@@ -1,4 +1,4 @@
-The Life Ontology (LifO) is an ontology of the life of an organism.
+The Life Ontology (LifO) is an ontology of the life of organism.
 
 LifO represents the life processes of organisms and related entities and relations. LifO is a general purpose ontology that covers the common features associated with different types of organisms such as unicellular prokaryotes (e.g., <i>E. coli</i>) and multicellular organisms (e.g., human). 
 
